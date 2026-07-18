@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شروط الاستخدام — تطبيق نما</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: #FBF8F2;
+      color: #1a1a2e;
+      direction: rtl;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #31426E;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 64px; height: 64px;
+      background: #FFD966;
+      border-radius: 16px;
+      margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 700; color: #31426E;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #B8C4DE;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      font-size: 15px;
+      color: #444;
+      background: #F0F3FA;
+      border-right: 4px solid #31426E;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #31426E;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #F0F3FA;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #31426E;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #333;
+      padding: 6px 0 6px 0;
+      padding-right: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✓';
+      position: absolute;
+      right: 0;
+      color: #31426E;
+      font-weight: 700;
+    }
+
+    ul li.cross::before {
+      content: '✗';
+      color: #e53e3e;
+    }
+
+    .highlight {
+      background: #FFF3C4;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .warning {
+      background: #FFF5F5;
+      border-right: 4px solid #e53e3e;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-box {
+      background: #31426E;
+      color: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .contact-box p { color: #B8C4DE; margin-bottom: 8px; }
+
+    .contact-box a {
+      color: #FFD966;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: #F0F3FA;
+      color: #31426E;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .price-table th {
+      background: #31426E;
+      color: #fff;
+      padding: 10px 16px;
+      text-align: right;
+    }
+
+    .price-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #F0F3FA;
+      color: #333;
+    }
+
+    .price-table tr:last-child td { border-bottom: none; }
+    .price-table tr:nth-child(even) td { background: #F8F9FC; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 24px 16px; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ن</div>
+  <h1>شروط الاستخدام</h1>
+  <p>تطبيق نما — منصة التعلم التفاعلي للمرحلة الابتدائية</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <span class="date-badge">تاريخ السريان: 18 يوليو 2026</span>
+
+    <div class="intro">
+      مرحباً بك في تطبيق نما. باستخدامك للتطبيق فإنك توافق على الشروط والأحكام الواردة في هذه الوثيقة. يُرجى قراءتها بعناية قبل تسجيل حسابك أو استخدام الخدمة.
+    </div>
+
+    <h2>أولاً: قبول الشروط</h2>
+    <p>باستخدامك لتطبيق نما أو تسجيلك فيه، فإنك تُقرّ بأنك ولي أمر أو وصي قانوني على الطفل المستخدم، وأنك قرأت هذه الشروط وفهمتها ووافقت عليها. إذا كنت لا توافق على هذه الشروط، يُرجى عدم استخدام التطبيق.</p>
+
+    <h2>ثانياً: وصف الخدمة</h2>
+    <p>تطبيق نما منصة تعليمية تفاعلية تُقدّم:</p>
+    <ul>
+      <li>دروساً تفاعلية تغطي مناهج المرحلة الابتدائية في المملكة العربية السعودية</li>
+      <li>نظام نجوم وميداليات لتحفيز الطلاب</li>
+      <li>ملفات منفصلة لكل طفل تحت حساب ولي أمر واحد (حتى 3 أطفال)</li>
+      <li>تقارير تفصيلية لمتابعة تقدم الأطفال</li>
+      <li>بيئة تعليمية آمنة وخالية من الإعلانات</li>
+    </ul>
+
+    <h2>ثالثاً: الاشتراك والأسعار</h2>
+    <div class="highlight">
+      التطبيق مجاني للتحميل مع إتاحة عدد محدود من الدروس المجانية، ويتطلب اشتراكاً مدفوعاً للوصول الكامل.
+    </div>
+
+    <table class="price-table">
+      <tr>
+        <th>نوع الاشتراك</th>
+        <th>السعر</th>
+        <th>التفاصيل</th>
+      </tr>
+      <tr>
+        <td>شهري</td>
+        <td>19.99 ريال/شهر</td>
+        <td>يتجدد تلقائياً كل شهر</td>
+      </tr>
+      <tr>
+        <td>سنوي</td>
+        <td>189.99 ريال/سنة</td>
+        <td>يتجدد تلقائياً كل سنة — وفّر 21%</td>
+      </tr>
+      <tr>
+        <td>تجربة مجانية</td>
+        <td>مجاناً</td>
+        <td>7 أيام مجانية عند أول اشتراك</td>
+      </tr>
+    </table>
+
+    <div class="warning">
+      يتجدد الاشتراك تلقائياً ما لم تقم بإلغائه قبل 24 ساعة من تاريخ التجديد. يمكن إدارة الاشتراك وإلغاؤه من إعدادات حسابك في App Store أو Google Play.
+    </div>
+
+    <h2>رابعاً: سياسة الاسترداد</h2>
+    <p>تخضع عمليات الاسترداد لسياسات منصتَي Apple وGoogle:</p>
+    <ul>
+      <li>يمكن طلب استرداد المبالغ خلال 48 ساعة من الشراء عبر App Store أو Google Play</li>
+      <li>لا يُعاد استرداد رسوم الفترات المنتهية من الاشتراك</li>
+      <li>التجربة المجانية لا تُشحن إلا بعد انتهائها</li>
+    </ul>
+
+    <h2>خامساً: حساب المستخدم والمسؤوليات</h2>
+
+    <h3>ما يجب عليك:</h3>
+    <ul>
+      <li>تقديم معلومات دقيقة وصحيحة عند التسجيل</li>
+      <li>الحفاظ على سرية كلمة المرور ورمز PIN</li>
+      <li>إخطارنا فوراً عند الاشتباه بأي اختراق لحسابك</li>
+      <li>استخدام التطبيق لأغراض تعليمية مشروعة فقط</li>
+    </ul>
+
+    <h3>ما هو محظور:</h3>
+    <ul>
+      <li class="cross">مشاركة بيانات الدخول مع أشخاص آخرين خارج العائلة</li>
+      <li class="cross">محاولة اختراق أو التلاعب بأنظمة التطبيق</li>
+      <li class="cross">نسخ المحتوى التعليمي أو إعادة توزيعه</li>
+      <li class="cross">استخدام التطبيق لأغراض تجارية دون إذن مسبق</li>
+    </ul>
+
+    <h2>سادساً: الملكية الفكرية</h2>
+    <p>جميع المحتويات في تطبيق نما — بما في ذلك الدروس والرسومات والأصوات والنصوص والشعارات — هي ملك حصري لتطبيق نما ومحمية بموجب قوانين حقوق الملكية الفكرية. لا يُسمح بنسخ أي محتوى أو إعادة توزيعه أو استخدامه تجارياً دون إذن كتابي مسبق.</p>
+
+    <h2>سابعاً: إخلاء المسؤولية</h2>
+    <p>يُقدّم تطبيق نما خدماته "كما هي" ويسعى دائماً لضمان جودة المحتوى وتوفر الخدمة، غير أننا لا نضمن:</p>
+    <ul>
+      <li>توافر الخدمة بشكل مستمر وبدون انقطاع</li>
+      <li>خلوّ التطبيق من الأخطاء التقنية بشكل كامل</li>
+      <li>تحقيق نتائج تعليمية محددة</li>
+    </ul>
+
+    <h2>ثامناً: تعليق الحساب وإنهاؤه</h2>
+    <p>نحتفظ بحق تعليق أو إنهاء حسابك في الحالات التالية:</p>
+    <ul>
+      <li>انتهاك هذه الشروط</li>
+      <li>التأخر في سداد رسوم الاشتراك</li>
+      <li>الاشتباه بأي نشاط احتيالي</li>
+    </ul>
+    <p>يمكنك أنت أيضاً إنهاء حسابك في أي وقت عبر إعدادات التطبيق أو بالتواصل معنا.</p>
+
+    <h2>تاسعاً: تعديل الشروط</h2>
+    <p>قد نُحدّث هذه الشروط من وقت لآخر. سنُخطرك بأي تغييرات جوهرية عبر البريد الإلكتروني أو إشعار داخل التطبيق قبل 30 يوماً من سريانها. استمرارك في استخدام التطبيق بعد سريان التغييرات يُعدّ موافقةً عليها.</p>
+
+    <h2>عاشراً: القانون المُطبَّق</h2>
+    <p>تخضع هذه الشروط لأنظمة وقوانين المملكة العربية السعودية، وتختص المحاكم السعودية بالنظر في أي نزاعات تنشأ عنها.</p>
+
+    <div class="contact-box">
+      <p>للاستفسارات المتعلقة بشروط الاستخدام تواصل معنا</p>
+      <a href="mailto:Support@nama-app.com">Support@nama-app.com</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 تطبيق نما — جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
